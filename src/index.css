@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Dosis", sans-serif;
+}
+
+.navitem:hover{
+
+    border-bottom: 1px solid #92a7ed;
+    
+    border-top:1px solid #92a7ed;
+
+}
+.hnavitem:hover{
+
+    border-bottom: 1px solid red;
+    
+    border-top:1px solid red;
+
+}
+.lnavitem:hover{
+
+    border-bottom: 1px solid green;
+    
+    border-top:1px solid green;
+
+}
+.him:hover h1{
+scale: 1.5;
+color:yellowgreen;
+}
+
+.her:hover h1{
+    scale: 1.5;
+    color:yellowgreen;
+    }
+
+    .menu{
+        border-left: 1px solid grey;
+        /* border-bottom: 1px solid gray; */
+       
+    }
+    .bdr{
+        border-top: 1px solid grey;
+    }
+
+    .text-shadow-md,.texts{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .slick-slide > div {
+        margin: 0 10px;
+        padding: 30px 0px;
+      }
+      
+      .sl {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+      }
+      
+      /* Slide-in state */
+      .slide-in {
+        transform: translateX(0);
+        opacity: 1;
+        position: relative;
+      }
+      .sr {
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+      }
+      
+      /* Final visible state for the registration form */
+      .form-slide-in {
+        transform: translateX(0);
+        opacity: 1;
+      }
